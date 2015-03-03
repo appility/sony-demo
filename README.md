@@ -1,2 +1,2 @@
 # sony-demo
-Simple backbone web app using provided API
+Simple BackboneJS web app using API provided by Sony
