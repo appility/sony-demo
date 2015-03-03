@@ -1,0 +1,32 @@
+@import 'includes/pure_extras';
+
+body {
+        padding: 1em;
+        }
+        .errors {
+            display: none;
+        }
+        .errors ul {
+            padding: 0;
+            margin: 0;
+        }
+        .errors li {
+            list-style: none;
+        }
+        .errors h4 {
+            font-size: 1em;
+            margin: 0em 0 0.6em 0em;
+        }
+        .pure-form legend {
+            font-size: 1.3em;
+        }
+        .pure-table caption {
+            font-style: normal;
+            font-size: 1.5em;
+            text-align: left;
+            padding: 0.4em 0em 0.4em 0em;
+        }
+        .pure-radio input {
+            vertical-align: top;
+            margin-right: 0.4em;
+        }

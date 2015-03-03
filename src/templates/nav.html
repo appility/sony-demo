@@ -1,0 +1,12 @@
+<ul>
+	<li class="pure-menu-selected"><a href="/">Home</a></li>
+	<li><a href="/titles">Titles</a></li>
+{{#if authStatus}}
+	<li><a href="/profile">My profile</a></li>
+	<li><a href="/profile/titles">My Titles</a></li>
+	<li><a href="/logout">Logout</a></li>
+{{else}}
+    <li><a href="/signin">Sign In</a></li>
+    <li><a href="/register">Register</a></li>
+{{/if}}
+</ul>

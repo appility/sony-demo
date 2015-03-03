@@ -1,0 +1,38 @@
+	<section id="register-view">
+		<form class="pure-form pure-form-stacked" action="" method="post">
+	    	<fieldset>
+	        <legend>Register</legend>
+
+	        <div class="errors pure-alert pure-alert-error" role="group">&nbsp;</div>
+
+    	    <label for="firstName">FirstName</label>
+            <input id="firstName" name="firstName" type="text" placeholder="FirstName" value="{{firstName}}">
+
+            <label for="lastName">LastName</label>
+            <input id="lastName" name="lastName" type="text" placeholder="LastName" value="{{lastName}}">
+
+            <label for="username">Username</label>
+            <input id="userName" name="username" type="text" placeholder="Username" value="{{userName}}">
+
+            <label for="age">Age</label>
+            <input id="age" name="age" type="text" placeholder="Age" value="{{age}}">
+
+            <label for="phoneNumber">Phone number</label>
+            <input id="phoneNumber" name="phoneNumber" type="text" placeholder="079909998788"  value="{{phoneNumber}}">
+
+            <label for="genderIsFemale0" class="pure-radio">
+            <input id="genderIsFemale0" type="radio" name="genderIsFemale" value="false" {{^genderIsFemale}} checked{{/genderIsFemale}}>Male</label>
+
+            <label for="genderIsFemale1" class="pure-radio">
+            <input id="genderIsFemale1" type="radio" name="genderIsFemale" value="true" {{#genderIsFemale}} checked{{/genderIsFemale}}>Female</label>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" type="text" placeholder="Notes">{{notes}}</textarea>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" value="{{password}}">
+
+	        <button type="submit" class="button-success pure-button">Register</button>
+	    	</fieldset>
+		</form>
+	</section>
