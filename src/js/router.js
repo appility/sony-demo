@@ -21,9 +21,6 @@ define([
 		},
 
 		route: function(route, name, callback) {
-			console.log(route);
-			console.log(name);
-			console.log(callback);
 			var openRoutes = ['index', 'titles', 'signin', 'register'];
 			var router = this;
 			if (!callback) {
@@ -48,7 +45,6 @@ define([
 		},
 
 		index: function() {
-			console.log('thisisindexinroute');
 			var self = this;
 			require(['views/home'], function(HomeView) {
 				var view = new HomeView();
@@ -141,18 +137,4 @@ define([
 	});
 
 	return Router;
-
-	// var initialize = function(options) {
-	// 	var router = new Router(options);
-	// 	Backbone.history.start({
-	// 		root: '',
-	// 		pushState: 'pushState' in window.history
-	// 	});
-	// };
-
-	// return {
-	// 	initialize: initialize,
-	// 	Router: Router
-	// };
-
 });
